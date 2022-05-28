@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Flexbox Фотогалерея</title>
+        <style>
+            h2{
+                font-size: 1.2;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            .gallery{
+                border: 1px solid black;
+                background-color: rgb(238,238,238);
+            }
+            body{
+                display: flex;
+            }
+            ul{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            li{
+                height: 250px;
+                width: 150px;
+                display: flex;
+                margin: 1em;
+                border: 0.5em solid black;
+                padding: 0.5em;
+                background-color: white;
+                align-items: center;
+                list-style-type: none;
+            }
+            img{
+                height: fit-content;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="gallery">
+            <ul>
+                <li><img src="../task4/pictures/picture1.jpg" alt="picture1"></li>
+                <li><img src="../task4/pictures/picture2.jpg" alt="picture2"></li>
+                <li><img src="../task4/pictures/picture3.jpg" alt="picture3"></li>
+                <li><img src="../task4/pictures/picture4.jpg" alt="picture4"></li>
+                <li><img src="../task4/pictures/picture5.jpg" alt="picture5"></li>
+                <li><img src="../task4/pictures/picture6.jpg" alt="picture6"></li>
+                <li><img src="../task4/pictures/picture7.jpg" alt="picture7"></li>
+                <li><img src="../task4/pictures/picture8.jpg" alt="picture8"></li>
+                <li><img src="../task4/pictures/picture9.jpg" alt="picture9"></li>
+            </ul>
+        </section>
+    </body>
+</html>

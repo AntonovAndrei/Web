@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+   <head>
+        <meta charset="UTF-8">
+        <title>Адаптивная таблица</title>
+        <style>
+            body {
+              text-align: center;
+              font-family: sans-serif;
+              background-size: cover;
+              color: #fff;
+            }
+            .table-wrap {
+              text-align: center;
+              display: block;
+              background-color: #fff;
+              padding: 2rem 2rem;
+              color: #000;
+            }
+            table {
+              border: 1px solid #ccc;
+              width: 100%;
+              border-collapse: collapse;
+            }
+            table tr {
+              width:auto;
+              border: 1px solid #ddd;
+            }
+            table th, table td {
+              width:33%;
+              padding: 10px;
+              padding-right: 0;
+              text-align: left;
+              border-right: 1px solid #ddd;
+            }
+            table th {
+              color: #fff;
+              background-color: #444;
+              font-size: 14px;
+            }
+            .tab tr:first-child {
+              background: rgb(217, 217, 217);
+            }
+            @media screen and (max-width: 600px) {
+              table {
+                border: 0;
+              }
+              table thead {
+                display: none;
+              }
+              table tr {
+                display:block;
+                border-bottom: 2px solid #ddd;
+              }
+              table  td {
+                display: block;
+                box-sizing:border-box;
+                width:auto;
+                max-width:100%;
+                text-align: left;
+                font-size: 13px;
+                border-bottom: 1px solid #ccc;
+                border-right: 0;
+              }
+              table td:last-child {
+                border-bottom: 0;
+              }
+              table td:before {
+                content: attr(data-text);
+                font-weight: bold;
+                margin-right: 10px;
+              }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="table-wrap">
+          <table class="tab">
+            <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Job Title</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td data-text="First Name">James</td>
+                  <td data-text="Last Name">Matman</td>
+                  <td data-text="Job Title">Chief Sandwich Eater</td>
+                </tr>
+              <tr>
+                <td data-text="First Name">Jon</td>
+                <td data-text="Last Name">Doe</td>
+                <td data-text="Job Title">Chief Executive Eater</td>
+              </tr>
+            </tbody>
+        </table>
+          </div>
+    </body>
+</html>

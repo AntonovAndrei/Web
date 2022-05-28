@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Authorization</title>
+        <meta name="viewport" content="width=device-width">
+        <style>
+            @media screen and (min-width:801px) {
+                p{
+                display: inline-block;
+                }
+                input{
+                display: inline-block;
+                }
+            }
+
+            p{
+                margin: 0em;
+                /* display: inline-block; */
+                margin-right: 0.5em;
+            }
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 10em;
+            }
+            input{
+                border: 0.1em rgb(218, 218, 218) solid;
+                border-radius: 0.2em;
+                font-size:larger;
+                /* display: inline-block; */
+            }
+            #input-form{
+                background-color: rgb(245, 245, 245);
+                display: inline-block;
+                border: 0.1em rgb(150, 150, 150) solid;
+                border-radius: 0.2em; 
+                box-shadow: 0 0 5px 1px rgb(190, 190, 190);      
+                padding: 0 1em;
+            }
+            #input-place{
+                font-weight: bold;
+            }
+            #up-left{
+                display: inline-block;
+                position: relative;
+                left: -1.1em;
+                top: -1.2em;
+                z-index: 1;
+                background-color: rgb(245, 245, 245);
+                border: 0.1em rgb(150, 150, 150) solid;
+                border-radius: 0.2em; 
+                padding: 0.5em;
+                width: 10em;   
+                box-shadow: 0 0 5px 1px rgb(190, 190, 190);   
+            }
+            #username, #password{
+                display: block;
+                margin: 0 1.5em 1.5em 1.5em;
+            }
+            #login-btn{
+                display: block;
+                margin: 1.5em;
+            }
+            #login-btn input{
+                background-color: black;
+                color: white;
+                padding: 0.3em 1em;
+            }
+            #input-place input{
+                width: 15em;
+            }
+
+            #username #password{
+                display: inline;
+            }
+            
+            #username input{
+                background: url(login.png) no-repeat scroll 1px 1px;
+                padding-left:30px;
+                background-color: white;
+            }
+
+            #password input{
+                background: url(pass.png) no-repeat scroll 1px 1px;
+                padding-left:30px;
+                background-color: white;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="input-form">
+            <div id="up-left"><p>Login</p></div>
+            <div id="input-place">
+                <div id="username"><p>Username</p><input type="text"></div>
+                <div id="password"><p>Password</p><input type="password"></div>
+            </div>
+            <div id="login-btn"><input type="button" value="Login"></div>
+        </div>
+    </body>
+</html>

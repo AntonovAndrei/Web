@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Subtraction</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header id="header"><div id="headerBlog">Блог</div></header>
+    <div id="container">
+        <main id="main">
+            <div class="blogsTitle">Записи</div>
+            <ul id="blogsList">
+                
+            </ul>
+        </main>
+        <aside id="aside">
+            <div id="create">
+                <div class="blogsTitle">Создать запись</div>
+                <div id="createInput">
+                    <label>Автор</label>
+                    <input type="text" id="author">
+                    <label>Заголовок</label>
+                    <input type="text" id="title">
+                    <label>Категория</label>
+                    <input type="text" id="category">
+                    <label>Содержание</label>
+                    <textarea id="description"></textarea>
+                    <button type="button" id="createBtn">Создать</button>
+                </div>
+            </div>
+            <div id="archive">
+                <div class="blogsTitle">Архив</div>
+                <div id="archiveBlogs">
+                    <ul id="archiveList">
+
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <footer id="footer"><p>Курсовая работа по JS.</p></footer>
+
+    <script src="record.js"></script>
+    <script>
+        window.onload = function () {
+            solve();
+        }
+    </script>
+</body>
+
+</html>

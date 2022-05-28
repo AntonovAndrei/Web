@@ -1,0 +1,102 @@
+#header, #footer, #main, #aside{
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header{
+    align-items:flex-start;
+    background-color: #006b09;
+    border-bottom: 5px solid #07b148;
+    height: 40px;
+    padding: 15px 0 0 15px;
+    display: flex;
+    position: relative;
+    top: -10px;
+    left: -10px;
+}
+#footer{
+    align-items:flex-end;
+    min-height: 50px;
+    border-top: 2px solid black;
+    margin: 30px 0 0 0;
+    
+}
+#header, #footer{
+    width: 100%;
+}
+#main{
+    flex-basis: 80%;
+    min-width: 500px;
+}
+#aside{
+    flex-basis: 20%;
+    min-width: 280px;
+}
+#main, #aside{
+    min-height: 790px;
+    border: dashed 0.1rem #006b09;
+    border-radius: 15px;
+    box-shadow: 0.5em 1em 0.5em 0em rgba(64, 73, 59, 0.281);
+    margin:  5px 10px 5px 10px;
+    padding: 0 15px 0 15px;
+    word-wrap: break-word;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+}
+
+#headerBlog{
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: white;
+    margin: 0;
+    font-weight: normal;
+}
+
+.blogsTitle{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: normal;
+    margin: 20px 0 0 0;
+    color: black;
+    border-bottom: 2px solid #07b148;
+}
+label{
+    display: block;
+    margin-top: 10px;
+}
+input{
+    border: 0 solid;
+    border-bottom: 2px solid #40493B;
+    margin: 5px 0 5px 0;
+    padding: 5px;
+    width: 97%;
+}
+textarea{
+    width: 97%;
+    border: 2px solid #40493B;
+    min-height: 300px;
+    resize: vertical;
+}
+#createBtn{
+    margin-top: 20px;
+    padding: 5px 12px 5px 12px;
+    color: white;
+    background-color: #006b09;
+    border: 0 solid #006b09;
+    border-radius: 5px;
+    font-size: 15px;
+}
+#blogsList{
+    padding: 0;
+}
+#blogsList li{
+    list-style-type: none;
+}
+#archiveList li{
+    list-style-type: square;
+}
+
+
